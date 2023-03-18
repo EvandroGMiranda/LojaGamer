@@ -17,6 +17,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class UsuarioService {
+    @extend
 
     @Autowired
     private UsuarioRepository usuarioRepository;

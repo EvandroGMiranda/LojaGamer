@@ -3,9 +3,11 @@ package org.generation.lojadegames.security;
 import java.util.Collection;
 import java.util.List;
 
-import org.generation.lojadegames.model.Usuario;
+import org.generation.lojadegames.Model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+
 
 public class UserDetailsImpl implements UserDetails{
 

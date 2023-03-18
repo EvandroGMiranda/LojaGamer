@@ -1,13 +1,13 @@
-package org.generation.lojadegames.controller;
+package org.generation.lojadegames.Controller;
 
 import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
 
-import org.generation.lojadegames.model.Usuario;
-import org.generation.lojadegames.model.UsuarioLogin;
-import org.generation.lojadegames.repository.UsuarioRepository;
+import org.generation.lojadegames.Model.Usuario;
+import org.generation.lojadegames.Model.UsuarioLogin;
+import org.generation.lojadegames.Repository.UsuarioRepository;
 import org.generation.lojadegames.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/usuarios")
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 
     @Autowired

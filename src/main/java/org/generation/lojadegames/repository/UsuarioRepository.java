@@ -1,13 +1,16 @@
-package org.generation.lojadegames.repository;
+package org.generation.lojadegames.Repository;
 
 import java.util.Optional;
 
-import org.generation.lojadegames.model.Usuario;
+import org.generation.lojadegames.Model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
+	
+		public Optional<Usuario> findByUsuario(String usuario);
+		
 
-	public Optional<Usuario> findByUsuario(String usuario);	
 }
